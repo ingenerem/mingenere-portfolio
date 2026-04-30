@@ -108,9 +108,7 @@ export default function Body({ activeCard, setActiveCard }: BodyProps) {
 
                     <p className="text-2xl font-bold">Availability</p>
                     <h2 className="mt-2 text-xl mb-2">Atlanta Metro area/Remote</h2>
-                    <p>
-                        Software engineering roles.
-                    </p>
+                    
                 </Card>
 
             </motion.div>
