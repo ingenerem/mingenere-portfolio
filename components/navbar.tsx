@@ -15,7 +15,7 @@ export default function Navbar({ setActiveCard }: NavbarProps) {
 
 
     return (
-        <nav className="flex items-center justify-between py-2 mt-0 text-black dark:text-white">
+        <nav className="flex items-center justify-between py-2 mt-0 text-black dark:text-white sticky top-0 z-50 bg-black/90 backdrop-blur py-4">
             <div className="flex h-15 w-15 items-center justify-center rounded-full border border-purple-500 text-lg font-semibold">
                 M
             </div>
@@ -23,20 +23,22 @@ export default function Navbar({ setActiveCard }: NavbarProps) {
             <div className="flex items-center gap-8 text-sm text-black/100 dark:text-white/60">
 
                 {navItems.map((item) => (
-                    <button
+                    <a
+
                         key={item.id}
                         type="button"
                         onClick={(e) => {
                             e.stopPropagation();
-
-                            setActiveCard((prev) =>
-                                prev === item.id ? null : item.id
-                            );
+                            setActiveCard((prev) => (prev === item.id ? null : item.id));
+                            document.getElementById(item.id)?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center",
+                            });
                         }}
                         className="cursor-pointer hover:text-black dark:hover:text-white transition">
 
                         {item.label}
-                    </button>
+                    </a>
                 ))}
 
             </div>

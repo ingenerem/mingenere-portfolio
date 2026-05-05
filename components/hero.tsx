@@ -10,9 +10,10 @@ export default function Hero() {
 
       {/* Decorative sparkles */}
       <motion.div
+        
         animate={{ scale: [1, 1.1, 1] }}
         transition={{ duration: 1.5, repeat: Infinity }}
-        className="pointer-events-none absolute right-20 top-24 h-20 w-20 text-2xl text-purple-500 drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]"
+        className="hidden md:block lg:block pointer-events-none absolute right-20 top-24 h-20 w-20 text-2xl text-purple-500 drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]"
       >
         <span className="absolute left-1/2 top-0 -translate-x-1/2">✦</span>
         <span className="absolute left-0 top-1/2 -translate-y-1/2">✦</span>

@@ -30,7 +30,7 @@ export default function Card({
           : "0px 0px 0px rgba(0, 0, 0, 0)",
       }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className={`rounded-xl border p-4 transition-all duration-300 text-black dark:text-white/60
+      className={`h-full min-h-[100px] md:min-h-[120px] rounded-xl border p-4 transition-all duration-300 text-black dark:text-white/60
   ${
     isActive
       ? "border-purple-500 bg-white/10 shadow-lg shadow-purple-500/20"
