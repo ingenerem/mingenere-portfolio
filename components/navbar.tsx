@@ -16,7 +16,11 @@ export default function Navbar({ setActiveCard }: NavbarProps) {
 
     return (
         <nav className="flex items-center justify-between py-2 mt-0 text-black dark:text-white sticky top-0 z-50 bg-black/90 backdrop-blur py-4">
-            <div className="flex h-15 w-15 items-center justify-center rounded-full border border-purple-500 text-lg font-semibold">
+            <div 
+            onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" }); 
+            }}
+            className=" cursor-pointer flex h-15 w-15 items-center justify-center rounded-full border border-purple-500 text-lg font-semibold">
                 M
             </div>
 
