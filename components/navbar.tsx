@@ -15,7 +15,7 @@ export default function Navbar({ setActiveCard }: NavbarProps) {
 
 
     return (
-        <nav className="flex items-center justify-between py-2 mt-0 text-black dark:text-white sticky top-0 z-50 bg-black/90 backdrop-blur py-4">
+        <nav className="flex items-center justify-between py-2 mt-0 text-black dark:text-white sticky top-0 z-50 bg-black/90 backdrop-blur py-4sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-black/80 border-b border-black/10 dark:border-white/10">
             <div 
             onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" }); 

@@ -14,7 +14,7 @@ export default function Portfolio() {
   className="min-h-screen bg-white text-black dark:bg-black dark:text-white "
   onClick={() => setActiveCard(null)}
 >
-  <div className="bg-color-white mx-auto w-full max-w-[1500px] px-4 sm:px-6 md:px-8 lg:px-10 space-y-3">
+  <div className="bg-white dark:bg-black mx-auto w-full max-w-[1500px] px-4 sm:px-6 md:px-8 lg:px-10 space-y-3">
     
     <Navbar setActiveCard={setActiveCard} />
 
