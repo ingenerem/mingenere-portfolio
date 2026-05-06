@@ -17,7 +17,7 @@ export default function Body({ activeCard, setActiveCard }: BodyProps) {
             < motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 30, ease: "easeOut" }} className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+                transition={{ duration: 7, ease: "easeOut" }} className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
 
                 <section id="about">
 
